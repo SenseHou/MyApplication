@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3DFDF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_gravity="left"
+        android:paddingTop="3dp"
+        android:text="微信"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/wechat_tab_menu"
+        android:background="#CE2525" />
+
+    <FrameLayout
+        android:id="@+id/id_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/wechat_tab_menu"
+        android:background="#CE2525" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/wechat_tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/wechat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:text="微信"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:text="通讯录"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/find"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:text="发现"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/personal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:text="我"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
